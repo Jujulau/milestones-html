@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Common CSS Properties</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Common CSS Properties</h1>
+            <p>This site will display the common CSS properties that are used on websites. Here is a quick list:</p>
+        <!-- Insert cheat sheet photo of the properties -->
+        </header>
+
+        <section>
+            <p>You can use the &lt;style&gt; tag to include CSS properties in HTML</p>
+            <h3>Here is an example of how CSS properties are applied to HTML:</h3>
+
+            <ul>
+                <li>color
+                    <ul>
+                        <li id="color">change the <b><i>COLOR</i></b> of any text</li>
+                    </ul>
+                </li>
+                
+                <li>text-align 
+                    <ul>
+                        <li>align text to the left</li>
+                        <p id="align-center"><i>or</i> to the center</p>
+                        <p id="align-right">and all the way to the right</p>
+                    </ul>
+                </li>
+
+                <li>text-transform
+                    <ul>
+                        <li id="uppercase">you could capitalize</li>
+                        <p id="lowercase">lowercase</p>
+                        <p id="capitalize">or capitalize each letter of a word</p>
+                    </ul>
+                </li>
+                
+                <li>line-height
+                    <ul>
+                        <li id="line1">increase the line height<br>
+                            between lines of text
+                        </li>
+                        <p id="line2">decrease the line height<br>
+                            between lines of text
+                        </p>
+                    </ul>
+                </li>
+             
+                <li>letter-spacing
+                    <ul>
+                        <li id="space1">and you can also increase the spacing between letters</li>
+                        <p id="space2">and decrease spacing between letters</p>
+                    </ul>
+                </li>
+            
+                <li>font-family
+                    <ul>
+                        <li id="font">change the text to a font of <em>your</em> choice!</li>
+                    </ul>
+                </li>
+
+                <li>font-size
+                    <ul>
+                        <p id="font-size">change the font <i>size</i></p>
+                    </ul>
+                </li>
+
+                <li>font-style
+                    <ul>
+                        <p id="font-style">and you could change the style too</p> 
+                    </ul>
+                </li>
+
+                <li>font-weight
+                    <ul>
+                        <p id="font-weight">and weight</p>  
+                    </ul>
+                </li>
+
+                <li>background-color
+                    <ul>
+                        <li>as you can see, the background also has a color so you could change it to whatever color you want</li> 
+                    </ul>
+                </li>
+
+                <li>background-image
+                    <ul>
+                        <div class="image">
+                            <li>now we're also<br>  
+                                gonna add a small<br>
+                                background image<br>
+                                and see how that<br>
+                                goes huh
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+
+                <li>list-style-type
+                    <ul>
+                        <li class="style">now we gonna add some style to these bullet points</li>
+                        <li class="style">look</li>
+                        <li class="style">its</li>
+                        <li class="style">a</li>
+                        <li class="style">square</li>
+                    </ul>
+                </li>
+
+                <li>width and height
+                    <ul>
+                        <li>insert random image that i have rescaled with the width and height properties</li>
+                        <p><img src="https://media3.giphy.com/media/MeIucAjPKoA120R7sN/giphy.gif" width="100px" height="100px"/></p>  
+                    </ul>
+                </li>
+
+                <li>margin
+                    <ul>
+                        <li id="margin">now ima add a 50px margin to it and make it rly obvious <i>*adds bg color to make it more noticeable</i></li>
+                    </ul>
+                </li>
+
+                <li>padding
+                    <ul>
+                        <li id="padding">now ima add a 25px padding <i>*adds bg color to make it more noticeable</i></li>
+                    </ul>
+                </li>
+
+                <li>border
+                    <ul>
+                        <li id="border">adding border?</li>
+                    </ul>
+                </li>
+        </section>
+
+
+    </body>
+
+    <style>
+        header h1 {
+            text-align: center;
+        }
+
+        body {
+            line-height: 1.5;
+            background-color: rgb(255, 198, 198);
+        }
+
+        #color {
+            color: rgb(223, 9, 9);
+        }
+
+        #align-center {
+            text-align: center;
+            line-height: 0.5;
+        }
+
+        #align-right {
+            text-align: right;
+            line-height: 0.5;
+        }
+
+        #uppercase {
+            text-transform: uppercase;
+            line-height: 0.5;
+        }
+
+        #capitalize {
+            text-transform: capitalize;
+            line-height: 0.5;
+        }
+
+        #line1 {
+            line-height: 5;
+        }
+
+        #line2 {
+            line-height: 0.5;
+        }
+
+        #space1 {
+            letter-spacing: 4px;
+        }
+
+        #space2 {
+            letter-spacing: -1px;
+        }
+
+        #font {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #font-size {
+            font-size: small;
+        }
+
+        #font-style {
+            font-style: oblique;
+        }
+
+        #font-weight {
+            font-weight: 700;
+        }
+
+        .image {
+            background-image: url('https://cdn140.picsart.com/300216012225201.gif?to=crop&r=256');
+            width: 250px;
+            height: 250px;
+        }
+
+        .style {
+            list-style: square;
+        }
+
+        #margin {
+            margin: 50px;
+            background-color: darkgrey;
+        }
+
+        #padding {
+            padding: 25px;
+            background-color: darkslategray;
+        }
+
+        #border {
+            border: double;
+        }
+</html>
