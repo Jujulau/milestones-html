@@ -8,8 +8,8 @@
     <body>
         <header>
             <h1>Common CSS Properties</h1>
-            <p>This site will display the common CSS properties that are used on websites. Here is a quick list:</p>
-        <!-- Insert cheat sheet photo of the properties -->
+            <p>This site will display the common CSS properties that are used on websites.</p>
+     
         </header>
 
         <section>
@@ -136,7 +136,65 @@
                 </li>
         </section>
 
+        <section>
+          <h3>Now let's talk about selectors!</h3> 
+          <p>There are:</p> 
+            <ul>
+                <li>type/tag selectors</li>
+                <li>class selectors</li>
+                <li>ID selectors</li>
+            </ul>
+            
+            <h4>Type/Tag selectors</h4>
+            <p>Type selectors are used to select certain HTML tags/elements.</p>
+            <ul>
+                <li>For example, I could select the &lt;i&gt; tag and apply stylistic features to all of the &lt;i&gt; tags in CSS.</li>
+            </ul>
+            <img src="Screen Shot 2020-07-22 at 9.33.35 PM.png"/>
+            <p>Now that I've added this into the CSS, all of the &lt;i&gt; tags will have this aqua color.</p>
+            <p>Below are some examples of how it's applied to the page! <i>*I added white borders to make the screenshot more noticeable.</i></p>
+            <img class="sc" src="Screen Shot 2020-07-22 at 9.37.05 PM.png" width="200px"/>
+            <img class="sc" src="Screen Shot 2020-07-22 at 9.39.12 PM.png" width="400px"/>
 
+            <h4>Class selectors</h4>
+            <p>Class selectors are used to select multiple HTML elements on a page, and this is done through receiving the same classname. Remember the screenshots above? They both had the same 200px white border. This was accomplished through having the same classname. It saved me some time and it allowed me to apply the same effects to certain HTML elements in one go!</p>
+            <img src="Screen Shot 2020-07-22 at 9.48.48 PM.png"/>
+            <p>See how they both have the same class name?</p>
+            <img src="Screen Shot 2020-07-22 at 9.49.53 PM.png"/>
+            <p>I added this one rule to the CSS and it got applied to both images with that class!</p>
+
+            <h4>ID selectors</h4>
+            <p>ID selectors are similar to class selectors, however, they are very specific and can only be used once. This means that it only selects one HTML element, and that ID can only appear once.</p>
+            <p>For example, I used the border ID in this screenshot and I added a border to only this tag.</p>
+            <img src="Screen Shot 2020-07-22 at 9.55.28 PM.png"/>
+        </section>
+
+        <section>
+            <h3>OKAY. Now we're moving onto combinators</h3>
+            <p>There are:</p>
+                <ul>
+                    <li>descendant combinators</li>
+                    <li>child combinators</li>
+                </ul>
+
+            <h4>Descendant combinators</h4>
+            <p>Descendant combinator is an element nested anywhere in an element. It could be a direct child or an element that's five levels deep.</p>
+            <p>For example the li id, one of the ui tags, and the other li tag are the descendants of the overarching parent ui tag. <em>hope that makes sense</em></p>
+            <img src="Screen Shot 2020-07-22 at 9.55.28 PM.png"/>
+            <p>Basically all the HTML elements with this same tree have the same stylistic features applied to them through CSS. They all have this bique color now.</p>
+            <img src="Screen Shot 2020-07-22 at 10.24.18 PM.png" width="300px"/>
+            <img src="Screen Shot 2020-07-22 at 10.25.03 PM.png" width="300px"/>
+
+            <h4>Child combinators</h4>
+            <p>We kind of touched on child combinators earlier, but it's basically the element that is directly nested and under the parent element.</p>
+            <p>Look at this screenshot</p>
+            <img src="Screen Shot 2020-07-22 at 10.29.46 PM.png"/>
+            <p>The li tag is the child combinator and the ul tag in the parent combinator</p>
+            <p>It's really similar to descendant combinators.</p>
+            <img src="Screen Shot 2020-07-22 at 10.34.05 PM.png"/>
+            <img src="Screen Shot 2020-07-22 at 10.32.20 PM.png"/>
+            <p>but ya same idea or whateva</p>
+        </section>
     </body>
 
     <style>
@@ -227,5 +285,22 @@
 
         #border {
             border: double;
+        }
+
+        i {
+            color: aqua;
+        }
+
+        .sc {
+            background-color: azure;
+            padding: 25px;
+        }
+
+        ul > li > ul > li {
+            color: bisque;
+        }
+
+        ul > li {
+            color: gray;
         }
 </html>
